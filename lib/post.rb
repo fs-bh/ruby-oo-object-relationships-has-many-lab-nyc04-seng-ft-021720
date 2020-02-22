@@ -20,7 +20,8 @@ class Post
 
 	def author_name
 		# self.author ? self.author.name : nil
-		self.author&.name
+		# self.author&.name 
+		self.author&.name || nil
 	end
 
 	def self.all
