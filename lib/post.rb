@@ -20,8 +20,8 @@ class Post
 
 	def author_name
 		# self.author ? self.author.name : nil
-		# self.author&.name 
-		self.author&.name || nil
+		self.author&.name 											#returns nil if author not set
+		# self.author&.name || "my custom false or method call" 	#alternate if you want to return something other than nil
 	end
 
 	def self.all
